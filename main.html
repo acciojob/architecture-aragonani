@@ -4,10 +4,75 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	 <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1100px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .imageContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        td img {
+            width: 180px;
+            height: auto;
+            border-radius: 8px;
+        }
+        td:first-child, td:last-child {
+            width: 200px;
+        }
+        td:nth-child(2) {
+            width: 600px;
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+        <h1>Architecture Wonders</h1>
+        <div class="imageContainer">
+            <img src="architecture_main.jpg" alt="Main Architecture Image">
+        </div>
+        <table>
+            <tr>
+                <td><img src="architecture1.jpg" alt="Architecture Image 1"></td>
+                <td>The history of architecture is rich and diverse, spanning ancient wonders to modern skyscrapers.</td>
+                <td><img src="architecture2.jpg" alt="Architecture Image 2"></td>
+            </tr>
+            <tr>
+                <td><img src="architecture3.jpg" alt="Architecture Image 3"></td>
+                <td>Modern architecture incorporates innovative designs, sustainability, and cutting-edge materials.</td>
+                <td><img src="architecture4.jpg" alt="Architecture Image 4"></td>
+            </tr>
+        </table>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
